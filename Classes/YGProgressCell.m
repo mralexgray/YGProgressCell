@@ -8,12 +8,12 @@
 
 #import "YGProgressCell.h"
 #import "NSColor+CGColor.m"
-@interface ProgressCell()
+@interface YGProgressCell()
 + (CGImageRef) okImage;
 + (CGImageRef) errorImage;
 @end
 
-@implementation ProgressCell
+@implementation YGProgressCell
 @synthesize delegate;
 
 static inline double radians (double degrees) { return degrees * M_PI/180; }
@@ -25,8 +25,8 @@ static inline CGRect centerSubRectInRect(CGRect rect, CGRect SubRect){
 - (id) initWithSide:(CGFloat) value{
     if(self = [super init]){
         side = value;
-        errorImage = [ProgressCell errorImage];
-        okImage = [ProgressCell okImage];
+        errorImage = [YGProgressCell errorImage];
+        okImage = [YGProgressCell okImage];
         delegate = nil;
     }
     return self;

@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@protocol ProgressCellDelegate
+@protocol YGProgressCellDelegate
 
 @required
 
@@ -21,16 +21,16 @@
 @property (readwrite,nonatomic) BOOL error;
 @end
 
-@interface ProgressCell : NSCell {
+@interface YGProgressCell : NSCell {
     CGFloat max;
     CGFloat min;
     CGFloat side;
     CGImageRef okImage;
     CGImageRef errorImage;
-    id<ProgressCellDelegate> delegate;
+    id<YGProgressCellDelegate> delegate;
 }
 
-@property (nonatomic,assign)  id<ProgressCellDelegate> delegate;
+@property (nonatomic,assign)  id<YGProgressCellDelegate> delegate;
 
 - (id) initWithSide:(CGFloat) value;
 - (void) incrementBy:(CGFloat) increment;

@@ -7,9 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#import "ProcessExemple.h"
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource>
 
 @property (assign) IBOutlet NSWindow *window;
 
+@property (assign) IBOutlet NSTableView *tableView;
+
+/*********
+ * Here is the data model
+ */
+@property (readwrite,retain) NSMutableArray *processesArray;
+
+- (void) updateDisplayForProcessExemple:(ProcessExemple*) pro;
 @end

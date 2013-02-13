@@ -17,6 +17,7 @@
 		78DDBFCD16CBDE1F00AC00DA /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 78DDBFC916CBDE1F00AC00DA /* ok.png */; };
 		78DDBFCE16CBDE1F00AC00DA /* YGProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFCB16CBDE1F00AC00DA /* YGProgressCell.m */; };
 		78DDBFD016CBDF6900AC00DA /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFCF16CBDF6900AC00DA /* NSColor+CGColor.m */; };
+		78DDBFD316CBE36A00AC00DA /* ProcessExemple.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFD216CBE36A00AC00DA /* ProcessExemple.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		78DDBFCA16CBDE1F00AC00DA /* YGProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGProgressCell.h; path = ../../Classes/YGProgressCell.h; sourceTree = "<group>"; };
 		78DDBFCB16CBDE1F00AC00DA /* YGProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YGProgressCell.m; path = ../../Classes/YGProgressCell.m; sourceTree = "<group>"; };
 		78DDBFCF16CBDF6900AC00DA /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+CGColor.m"; path = "../../Classes/NSColor+CGColor.m"; sourceTree = "<group>"; };
+		78DDBFD116CBE36A00AC00DA /* ProcessExemple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessExemple.h; sourceTree = "<group>"; };
+		78DDBFD216CBE36A00AC00DA /* ProcessExemple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessExemple.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				78DDBFBE16CBDDF300AC00DA /* AppDelegate.m */,
 				78DDBFC016CBDDF300AC00DA /* MainMenu.xib */,
 				78DDBFB216CBDDF300AC00DA /* Supporting Files */,
+				78DDBFD116CBE36A00AC00DA /* ProcessExemple.h */,
+				78DDBFD216CBE36A00AC00DA /* ProcessExemple.m */,
 			);
 			path = ProgressCellExemple;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				78DDBFBF16CBDDF300AC00DA /* AppDelegate.m in Sources */,
 				78DDBFCE16CBDE1F00AC00DA /* YGProgressCell.m in Sources */,
 				78DDBFD016CBDF6900AC00DA /* NSColor+CGColor.m in Sources */,
+				78DDBFD316CBE36A00AC00DA /* ProcessExemple.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +325,7 @@
 				78DDBFC716CBDDF300AC00DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
