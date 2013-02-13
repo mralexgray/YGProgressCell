@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78DDBFAC16CBDDF300AC00DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DDBFAB16CBDDF300AC00DA /* Cocoa.framework */; };
+		78DDBFB616CBDDF300AC00DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78DDBFB416CBDDF300AC00DA /* InfoPlist.strings */; };
+		78DDBFB816CBDDF300AC00DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFB716CBDDF300AC00DA /* main.m */; };
+		78DDBFBC16CBDDF300AC00DA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 78DDBFBA16CBDDF300AC00DA /* Credits.rtf */; };
+		78DDBFBF16CBDDF300AC00DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFBE16CBDDF300AC00DA /* AppDelegate.m */; };
+		78DDBFC216CBDDF300AC00DA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DDBFC016CBDDF300AC00DA /* MainMenu.xib */; };
+		78DDBFCC16CBDE1F00AC00DA /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 78DDBFC816CBDE1F00AC00DA /* error.png */; };
+		78DDBFCD16CBDE1F00AC00DA /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 78DDBFC916CBDE1F00AC00DA /* ok.png */; };
+		78DDBFCE16CBDE1F00AC00DA /* YGProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFCB16CBDE1F00AC00DA /* YGProgressCell.m */; };
+		78DDBFD016CBDF6900AC00DA /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDBFCF16CBDF6900AC00DA /* NSColor+CGColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78DDBFA816CBDDF300AC00DA /* ProgressCellExemple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressCellExemple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DDBFAB16CBDDF300AC00DA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		78DDBFAE16CBDDF300AC00DA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		78DDBFAF16CBDDF300AC00DA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		78DDBFB016CBDDF300AC00DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		78DDBFB316CBDDF300AC00DA /* ProgressCellExemple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressCellExemple-Info.plist"; sourceTree = "<group>"; };
+		78DDBFB516CBDDF300AC00DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78DDBFB716CBDDF300AC00DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78DDBFB916CBDDF300AC00DA /* ProgressCellExemple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressCellExemple-Prefix.pch"; sourceTree = "<group>"; };
+		78DDBFBB16CBDDF300AC00DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		78DDBFBD16CBDDF300AC00DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78DDBFBE16CBDDF300AC00DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78DDBFC116CBDDF300AC00DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		78DDBFC816CBDE1F00AC00DA /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = error.png; path = ../../Classes/error.png; sourceTree = "<group>"; };
+		78DDBFC916CBDE1F00AC00DA /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ok.png; path = ../../Classes/ok.png; sourceTree = "<group>"; };
+		78DDBFCA16CBDE1F00AC00DA /* YGProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGProgressCell.h; path = ../../Classes/YGProgressCell.h; sourceTree = "<group>"; };
+		78DDBFCB16CBDE1F00AC00DA /* YGProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YGProgressCell.m; path = ../../Classes/YGProgressCell.m; sourceTree = "<group>"; };
+		78DDBFCF16CBDF6900AC00DA /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+CGColor.m"; path = "../../Classes/NSColor+CGColor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78DDBFA516CBDDF300AC00DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78DDBFAC16CBDDF300AC00DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78DDBF9F16CBDDF300AC00DA = {
+			isa = PBXGroup;
+			children = (
+				78DDBFB116CBDDF300AC00DA /* ProgressCellExemple */,
+				78DDBFAA16CBDDF300AC00DA /* Frameworks */,
+				78DDBFA916CBDDF300AC00DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78DDBFA916CBDDF300AC00DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78DDBFA816CBDDF300AC00DA /* ProgressCellExemple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78DDBFAA16CBDDF300AC00DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78DDBFAB16CBDDF300AC00DA /* Cocoa.framework */,
+				78DDBFAD16CBDDF300AC00DA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78DDBFAD16CBDDF300AC00DA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78DDBFAE16CBDDF300AC00DA /* AppKit.framework */,
+				78DDBFAF16CBDDF300AC00DA /* CoreData.framework */,
+				78DDBFB016CBDDF300AC00DA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		78DDBFB116CBDDF300AC00DA /* ProgressCellExemple */ = {
+			isa = PBXGroup;
+			children = (
+				78DDBFCF16CBDF6900AC00DA /* NSColor+CGColor.m */,
+				78DDBFC816CBDE1F00AC00DA /* error.png */,
+				78DDBFC916CBDE1F00AC00DA /* ok.png */,
+				78DDBFCA16CBDE1F00AC00DA /* YGProgressCell.h */,
+				78DDBFCB16CBDE1F00AC00DA /* YGProgressCell.m */,
+				78DDBFBD16CBDDF300AC00DA /* AppDelegate.h */,
+				78DDBFBE16CBDDF300AC00DA /* AppDelegate.m */,
+				78DDBFC016CBDDF300AC00DA /* MainMenu.xib */,
+				78DDBFB216CBDDF300AC00DA /* Supporting Files */,
+			);
+			path = ProgressCellExemple;
+			sourceTree = "<group>";
+		};
+		78DDBFB216CBDDF300AC00DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78DDBFB316CBDDF300AC00DA /* ProgressCellExemple-Info.plist */,
+				78DDBFB416CBDDF300AC00DA /* InfoPlist.strings */,
+				78DDBFB716CBDDF300AC00DA /* main.m */,
+				78DDBFB916CBDDF300AC00DA /* ProgressCellExemple-Prefix.pch */,
+				78DDBFBA16CBDDF300AC00DA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78DDBFA716CBDDF300AC00DA /* ProgressCellExemple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78DDBFC516CBDDF300AC00DA /* Build configuration list for PBXNativeTarget "ProgressCellExemple" */;
+			buildPhases = (
+				78DDBFA416CBDDF300AC00DA /* Sources */,
+				78DDBFA516CBDDF300AC00DA /* Frameworks */,
+				78DDBFA616CBDDF300AC00DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressCellExemple;
+			productName = ProgressCellExemple;
+			productReference = 78DDBFA816CBDDF300AC00DA /* ProgressCellExemple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78DDBFA016CBDDF300AC00DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "HEINRICH Yannick";
+			};
+			buildConfigurationList = 78DDBFA316CBDDF300AC00DA /* Build configuration list for PBXProject "ProgressCellExemple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 78DDBF9F16CBDDF300AC00DA;
+			productRefGroup = 78DDBFA916CBDDF300AC00DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78DDBFA716CBDDF300AC00DA /* ProgressCellExemple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78DDBFA616CBDDF300AC00DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78DDBFB616CBDDF300AC00DA /* InfoPlist.strings in Resources */,
+				78DDBFBC16CBDDF300AC00DA /* Credits.rtf in Resources */,
+				78DDBFC216CBDDF300AC00DA /* MainMenu.xib in Resources */,
+				78DDBFCC16CBDE1F00AC00DA /* error.png in Resources */,
+				78DDBFCD16CBDE1F00AC00DA /* ok.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78DDBFA416CBDDF300AC00DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78DDBFB816CBDDF300AC00DA /* main.m in Sources */,
+				78DDBFBF16CBDDF300AC00DA /* AppDelegate.m in Sources */,
+				78DDBFCE16CBDE1F00AC00DA /* YGProgressCell.m in Sources */,
+				78DDBFD016CBDF6900AC00DA /* NSColor+CGColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78DDBFB416CBDDF300AC00DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78DDBFB516CBDDF300AC00DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		78DDBFBA16CBDDF300AC00DA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78DDBFBB16CBDDF300AC00DA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		78DDBFC016CBDDF300AC00DA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78DDBFC116CBDDF300AC00DA /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78DDBFC316CBDDF300AC00DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		78DDBFC416CBDDF300AC00DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		78DDBFC616CBDDF300AC00DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressCellExemple/ProgressCellExemple-Prefix.pch";
+				INFOPLIST_FILE = "ProgressCellExemple/ProgressCellExemple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		78DDBFC716CBDDF300AC00DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProgressCellExemple/ProgressCellExemple-Prefix.pch";
+				INFOPLIST_FILE = "ProgressCellExemple/ProgressCellExemple-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78DDBFA316CBDDF300AC00DA /* Build configuration list for PBXProject "ProgressCellExemple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78DDBFC316CBDDF300AC00DA /* Debug */,
+				78DDBFC416CBDDF300AC00DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78DDBFC516CBDDF300AC00DA /* Build configuration list for PBXNativeTarget "ProgressCellExemple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78DDBFC616CBDDF300AC00DA /* Debug */,
+				78DDBFC716CBDDF300AC00DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78DDBFA016CBDDF300AC00DA /* Project object */;
+}
