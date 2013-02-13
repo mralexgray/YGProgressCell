@@ -7,11 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ProcessExemple.h"
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource>
+@class ProcessExemple;
+
+@protocol UpdateRowElement 
+
+- (void) updateDisplayForProcessExemple:(id) element;
+
+@end
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource,UpdateRowElement>
 
 @property (assign) IBOutlet NSWindow *window;
-
 @property (assign) IBOutlet NSTableView *tableView;
 
 /*********
@@ -19,5 +24,6 @@
  */
 @property (readwrite,retain) NSMutableArray *processesArray;
 
-- (void) updateDisplayForProcessExemple:(ProcessExemple*) pro;
+- (void) updateDisplayForProcessExemple:(id) element;
+
 @end

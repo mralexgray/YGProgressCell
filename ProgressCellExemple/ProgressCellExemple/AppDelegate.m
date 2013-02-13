@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 
 #import "YGProgressCell.h"
+#import "ProcessExemple.h"
+
 @implementation AppDelegate
 
 @synthesize processesArray;
@@ -16,10 +18,8 @@
 - (id) init{
     if(self = [super init]){
         ProcessExemple * pro = [[ProcessExemple alloc] init];
-        pro.progress = 2;
-        pro.max = 0;
-        pro.min = 5;
         processesArray = [[NSMutableArray alloc] init];
+        pro.tableViewController = self;
         [processesArray addObject:pro];
     }
     return self;
@@ -47,7 +47,10 @@
     NSString * identifier = aTableColumn.identifier;
     if([identifier isEqualToString:@"col1Identifier"]) return [NSNumber numberWithInt:1]; //Need to return something but the information is ot used
     
-    else return @"Teste";
+    else{
+        ProcessExemple * pro = processesArray[rowIndex];
+        return [NSNumber numberWithFloat:pro.progress];
+    }
 }
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(NSCell *)aCell forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)rowIndex{
@@ -58,8 +61,9 @@
     }
 }
 
-- (void) updateDisplayForProcessExemple:(ProcessExemple*) pro{
-    NSUInteger idx = [processesArray indexOfObject:pro];
+- (void) updateDisplayForProcessExemple:(id) element{
+    NSUInteger idx = [processesArray indexOfObject:element];
+    [self.tableView reloadDataForRowIndexes:[NSIndexSet indexSetWithIndex:idx]columnIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0,2)]];
     
     
 }

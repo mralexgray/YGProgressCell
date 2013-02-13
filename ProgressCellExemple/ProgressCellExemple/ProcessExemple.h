@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "YGProgressCell.h"
+#import "AppDelegate.h"
 @interface ProcessExemple : NSObject <YGProgressCellDelegate>
 
 
@@ -18,6 +19,7 @@
 @property (readwrite,nonatomic) BOOL complete;
 @property (readwrite,nonatomic) BOOL error;
 @property (readwrite,retain,nonatomic) NSTimer * timer;
+@property (readwrite,assign) id<UpdateRowElement> tableViewController;
 
 
 - (void) increment;
